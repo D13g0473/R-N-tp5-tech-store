@@ -21,8 +21,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onPress, onAddToCart
         source={{ uri: imageUrl }}
         style={styles.image}
         resizeMode="cover"
-        onError={(error) => console.log('Image load error:', error.nativeEvent.error)}
-        onLoad={() => console.log('Image loaded successfully:', imageUrl)}
+        onError={(error) => console.log('Eror al cargar imagen:', error.nativeEvent.error)}
+        onLoad={() => console.log('Imagen cargada con exito:', imageUrl)}
       />
       <View style={styles.content}>
         <Text style={styles.name} numberOfLines={2}>{product.name}</Text>

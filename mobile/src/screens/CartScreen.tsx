@@ -33,12 +33,12 @@ const CartScreen: React.FC = () => {
 
   const handleCheckout = async () => {
     if (cart.length === 0) {
-      Alert.alert('Empty Cart', 'Add some products to your cart first!');
+      Alert.alert('Carrito vacio', 'Añade algun producto primero!');
       return;
     }
 
     if (!user) {
-      Alert.alert('Authentication Required', 'Please login to place an order', [
+      Alert.alert('Se necesita autenticacion!', 'Por favor logeate para porder realizar una orden', [
         { text: 'Cancel', style: 'cancel' },
         { text: 'Login', onPress: () => navigation.navigate('Login' as never) }
       ]);
@@ -46,12 +46,12 @@ const CartScreen: React.FC = () => {
     }
 
     Alert.alert(
-      'Confirm Order',
-      `Total: $${getTotal().toFixed(2)}\n\nThis will create a real order in the system.`,
+      'Orden confirmada',
+      `Total: $${getTotal().toFixed(2)}\n\nEsto creara una orden real en el sistema.`,
       [
-        { text: 'Cancel', style: 'cancel' },
+        { text: 'Cancelar', style: 'cancel' },
         {
-          text: 'Place Order',
+          text: 'Ordenar',
           onPress: async () => {
             try {
               await ordersAPI.createOrder({
@@ -63,11 +63,11 @@ const CartScreen: React.FC = () => {
               });
 
               clearCart();
-              Alert.alert('Success!', 'Your order has been placed successfully!', [
+              Alert.alert('Exito!', 'A realizado su orden con exito!', [
                 { text: 'OK', onPress: () => navigation.navigate('HomeTab' as never) }
               ]);
             } catch (error: any) {
-              Alert.alert('Error', error.response?.data?.error?.message || 'Failed to place order');
+              Alert.alert('Error', error.response?.data?.error?.message || 'La orden fallo. Intenta nuevamente.');
             }
           }
         }

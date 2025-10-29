@@ -27,7 +27,7 @@ const FavoritesScreen: React.FC = () => {
         setFavorites(profile.favorites);
       }
     } catch (error) {
-      console.error('Failed to load favorites from server:', error);
+      console.error('Fallo la carga de favoritos desde el servidor:', error);
     }
   };
 
@@ -37,25 +37,25 @@ const FavoritesScreen: React.FC = () => {
 
   const handleAddToCart = (product: Product) => {
     addToCart(product, 1);
-    Alert.alert('Success', `${product.name} added to cart!`);
+    Alert.alert('Exito', `${product.name} Añadido al carrito!`);
   };
 
   const handleRemoveFavorite = async (productId: number, productName: string) => {
     if (!user) {
-      Alert.alert('Authentication Required', 'Please login to manage favorites', [
-        { text: 'Cancel', style: 'cancel' },
+      Alert.alert('Se necesita autenticacion.', 'Pro favor logeate para manejar favoritos.', [
+        { text: 'Cancelar', style: 'cancel' },
         { text: 'Login', onPress: () => navigation.navigate('Login' as never) }
       ]);
       return;
     }
 
     Alert.alert(
-      'Remove from Favorites',
-      `Remove ${productName} from favorites?`,
+      'Remover de favoritos',
+      `Remover ${productName} de favoritos?`,
       [
-        { text: 'Cancel', style: 'cancel' },
+        { text: 'Cancelar', style: 'cancel' },
         {
-          text: 'Remove',
+          text: 'Remover',
           style: 'destructive',
           onPress: async () => {
             try {
@@ -63,7 +63,7 @@ const FavoritesScreen: React.FC = () => {
               await userAPI.updateFavorites(updatedFavorites.map(fav => fav.id));
               setFavorites(updatedFavorites);
             } catch (error: any) {
-              Alert.alert('Error', error.response?.data?.error?.message || 'Failed to remove from favorites');
+              Alert.alert('Error', error.response?.data?.error?.message || 'Fallo la remocion de favoritos. Intenta nuevamente.');
             }
           }
         },
@@ -107,8 +107,8 @@ const FavoritesScreen: React.FC = () => {
     return (
       <View style={styles.emptyContainer}>
         <Text style={styles.emptyEmoji}>❤️</Text>
-        <Text style={styles.emptyTitle}>No favorites yet</Text>
-        <Text style={styles.emptySubtitle}>Products you favorite will appear here</Text>
+        <Text style={styles.emptyTitle}>No posee favoritos todavia</Text>
+        <Text style={styles.emptySubtitle}>Tus productos favoritos apareceran aqui.</Text>
         <TouchableOpacity
           style={styles.shopButton}
           onPress={() => navigation.navigate('HomeTab' as never)}
@@ -121,7 +121,7 @@ const FavoritesScreen: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>My Favorites ({favorites.length})</Text>
+      <Text style={styles.header}>Mis favoritos ({favorites.length})</Text>
 
       <FlatList
         data={favorites}

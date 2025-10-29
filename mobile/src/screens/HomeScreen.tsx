@@ -32,7 +32,7 @@ const HomeScreen: React.FC = () => {
       setCategories(categoriesResponse.data);
       setBrands(brandsResponse.data);
     } catch (error) {
-      Alert.alert('Error', 'Failed to load data');
+      Alert.alert('Error', 'Fallo la carga de datos. Intenta nuevamente.');
     } finally {
       setLoading(false);
       setRefreshing(false);
@@ -58,7 +58,7 @@ const HomeScreen: React.FC = () => {
 
   const handleAddToCart = (product: Product) => {
     addToCart(product, 1);
-    Alert.alert('Success', `${product.name} added to cart!`);
+    Alert.alert('Exito', `${product.name} añadido al carrito!`);
   };
 
   const onRefresh = () => {
@@ -78,7 +78,7 @@ const HomeScreen: React.FC = () => {
     <View style={styles.container}>
       <TextInput
         style={styles.searchInput}
-        placeholder="Search products..."
+        placeholder="Buscar productos ..."
         value={searchQuery}
         onChangeText={setSearchQuery}
       />

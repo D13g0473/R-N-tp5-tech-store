@@ -29,8 +29,8 @@ const LoginScreen: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome Back</Text>
-      <Text style={styles.subtitle}>Sign in to your account</Text>
+      <Text style={styles.title}>Bienvenidos</Text>
+      <Text style={styles.subtitle}>Ingresa con tu cuenta</Text>
 
       <TextInput
         style={styles.input}
@@ -64,7 +64,7 @@ const LoginScreen: React.FC = () => {
         style={styles.linkButton}
         onPress={() => (navigation as any).navigate('Register')}
       >
-        <Text style={styles.linkText}>Don't have an account? Register</Text>
+        <Text style={styles.linkText}>No tienes una cuenta? Registrate</Text>
       </TouchableOpacity>
     </View>
   );
