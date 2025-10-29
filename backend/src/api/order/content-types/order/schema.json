@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Orders"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "items": {
+      "type": "component",
+      "component": "order-item.order-item",
+      "repeatable": true
+    },
+    "total": {
+      "type": "decimal",
+      "required": true
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "pending ",
+        "confirmed ",
+        "close"
+      ]
+    }
+  }
+}

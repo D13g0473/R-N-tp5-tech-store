@@ -1,0 +1,84 @@
+{
+    "id": 8,
+    "documentId": "tfbkg6d0ak6nfxq3jcxdzs00",
+    "name": "Notebook 2 En 1 Dell Core I7 1365u 16gb 512gb 13.3\" W11 Tactil Color Plateado",
+    "Price": 1027900.02,
+    "description": "Lo que tenés que saber de este producto\nVersión del sistema operativo: 11.\nNombre del sistema operativo: Windows.\nCapacidad de disco SSD: 512 GB.\nCapacidad total del módulo de memoria RAM: 16 GB.\nCon pantalla táctil: Sí.\nResolución de la pantalla: 1920 px x 1080 px.\nConexión wifi y bluetooth.\nProcesador Intel Core i7 1365u potente.\n16gb de ram para trabajos exigentes.\n512gb ssd para almacenamiento rápido",
+    "createdAt": "2025-10-26T17:12:18.916Z",
+    "updatedAt": "2025-10-26T17:27:40.068Z",
+    "publishedAt": "2025-10-26T17:27:40.084Z",
+    "discount": 0,
+    "stock": 20,
+    "image": [
+        {
+            "id": 3,
+            "documentId": "ghai1ipo6nwjwp9vjhsx3tg4",
+            "name": "D_NQ_NP_2X_829764-MLA83768121009_042025-F.webp",
+            "alternativeText": "Top view of an open silver laptop with a purple abstract wave pattern on the screen.",
+            "caption": "This silver laptop features a vibrant purple abstract wave pattern displayed on its open screen.",
+            "width": 1078,
+            "height": 840,
+            "formats": {
+                "thumbnail": {
+                    "name": "thumbnail_D_NQ_NP_2X_829764-MLA83768121009_042025-F.webp",
+                    "hash": "thumbnail_D_NQ_NP_2_X_829764_MLA_83768121009_042025_F_6046321458",
+                    "ext": ".webp",
+                    "mime": "image/webp",
+                    "path": null,
+                    "width": 200,
+                    "height": 156,
+                    "size": 4.06,
+                    "sizeInBytes": 4062,
+                    "url": "/uploads/thumbnail_D_NQ_NP_2_X_829764_MLA_83768121009_042025_F_6046321458.webp"
+                },
+                "large": {
+                    "name": "large_D_NQ_NP_2X_829764-MLA83768121009_042025-F.webp",
+                    "hash": "large_D_NQ_NP_2_X_829764_MLA_83768121009_042025_F_6046321458",
+                    "ext": ".webp",
+                    "mime": "image/webp",
+                    "path": null,
+                    "width": 1000,
+                    "height": 779,
+                    "size": 32.93,
+                    "sizeInBytes": 32932,
+                    "url": "/uploads/large_D_NQ_NP_2_X_829764_MLA_83768121009_042025_F_6046321458.webp"
+                },
+                "medium": {
+                    "name": "medium_D_NQ_NP_2X_829764-MLA83768121009_042025-F.webp",
+                    "hash": "medium_D_NQ_NP_2_X_829764_MLA_83768121009_042025_F_6046321458",
+                    "ext": ".webp",
+                    "mime": "image/webp",
+                    "path": null,
+                    "width": 750,
+                    "height": 584,
+                    "size": 24.33,
+                    "sizeInBytes": 24330,
+                    "url": "/uploads/medium_D_NQ_NP_2_X_829764_MLA_83768121009_042025_F_6046321458.webp"
+                },
+                "small": {
+                    "name": "small_D_NQ_NP_2X_829764-MLA83768121009_042025-F.webp",
+                    "hash": "small_D_NQ_NP_2_X_829764_MLA_83768121009_042025_F_6046321458",
+                    "ext": ".webp",
+                    "mime": "image/webp",
+                    "path": null,
+                    "width": 500,
+                    "height": 390,
+                    "size": 14.71,
+                    "sizeInBytes": 14714,
+                    "url": "/uploads/small_D_NQ_NP_2_X_829764_MLA_83768121009_042025_F_6046321458.webp"
+                }
+            },
+            "hash": "D_NQ_NP_2_X_829764_MLA_83768121009_042025_F_6046321458",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 40.76,
+            "url": "/uploads/D_NQ_NP_2_X_829764_MLA_83768121009_042025_F_6046321458.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-10-26T17:11:59.616Z",
+            "updatedAt": "2025-10-26T17:12:02.157Z",
+            "publishedAt": "2025-10-26T17:11:59.616Z"
+        }
+    ]
+}
