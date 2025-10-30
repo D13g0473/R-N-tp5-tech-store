@@ -39,7 +39,8 @@ export const productsAPI = {
     const response = await publicApi.get('/products', {
       params: {
         ...params,
-        populate: ['image', 'brand', 'category']
+        populate: ['image', 'brand', 'category'],
+        'filters[isActive]': true // Solo mostrar productos activos
       }
     });
     return response.data;

@@ -37,6 +37,10 @@
     "stock": {
       "type": "integer"
     },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
     "brand": {
       "type": "relation",
       "relation": "oneToOne",
